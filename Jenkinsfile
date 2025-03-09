@@ -38,7 +38,7 @@ pipeline {
    post {
         success {
             echo 'Build and tests passed!'
-            junit '**/target/test-*.xml'  // Publish test results (JUnit format)
+            
         }
         failure {
             echo 'Build failed!'

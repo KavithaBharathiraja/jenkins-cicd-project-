@@ -10,8 +10,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout the source code from the GitHub repository
-               git 'https://github.com/KavithaBharathiraja/jenkins-cicd-project-.git'
-
+                git branch: 'main', url: 'https://github.com/KavithaBharathiraja/jenkins-cicd-project-.git'
             }
         }
 
@@ -43,6 +42,7 @@ pipeline {
         }
         failure {
             echo 'Build failed!'
+            // Optionally, you can add other actions here (e.g., notify failure via email/slack)
         }
     }
 }

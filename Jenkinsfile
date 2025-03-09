@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        jdk 'JDK 11'  // Use the JDK name configured in Jenkins
+        jdk 'JDK 17'  // Use JDK 17 as it's configured in Jenkins
     }
 
     stages {

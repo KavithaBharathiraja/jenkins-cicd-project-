@@ -41,4 +41,7 @@ pipeline {
         }
         failure {
             echo 'Build failed!'
-  
+            // Optionally, you can add other actions here (e.g., notify failure via email/slack)
+        }
+    }
+}

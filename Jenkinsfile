@@ -1,9 +1,8 @@
 pipeline {
     agent any
 
-    environment {
-        JAVA_HOME = '/usr/lib/jvm/java-11-openjdk'
-        PATH = "${JAVA_HOME}/bin:${env.PATH}"
+    tools {
+        jdk 'OpenJDK 11'  // Replace with your JDK installation name from Jenkins Global Tool Configuration
     }
 
     stages {
@@ -42,7 +41,4 @@ pipeline {
         }
         failure {
             echo 'Build failed!'
-            // Optionally, you can add other actions here (e.g., notify failure via email/slack)
-        }
-    }
-}
+  

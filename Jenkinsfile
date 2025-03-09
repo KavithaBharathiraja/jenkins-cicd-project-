@@ -10,7 +10,8 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout the source code from the GitHub repository
-                git 'https://github.com/yourusername/simple-java-project.git'  // Replace with your repo URL
+                git 'https://github.com/KavithaBharathiraja/jenkins-cicd-project-.git
+'  // Replace with your repo URL
             }
         }
 
